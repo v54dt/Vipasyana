@@ -16,7 +16,7 @@ MongoClient.connect(url, function(err, db)
     const csv = require('csv-parser');
     const fs = require('fs');
 
-    fs.createReadStream('ecg_data_30.csv')
+    fs.createReadStream('ecg_data_0.csv')
     .pipe(csv())
     .on('data', (row) => 
     {
