@@ -1,4 +1,4 @@
-db.0716_parsed.aggregate ( [
+db.0322_fake_ecg_data.aggregate ( [
 { "$match" : { "MAC" : "00000001-0000-0000-0000-D2AC31BF0A1C", "ts" : { "$gte" : "$from",   "$lte" : "$to"} } },
 { "$sort" : {"ts" : 1 } } ,
 { "$project" :  { "name" : "value", "value" : "$ecg_data" , "ts" : "$ts" } } ] )
